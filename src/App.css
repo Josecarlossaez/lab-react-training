@@ -38,6 +38,12 @@
   border-width:2px;
   gap:20px
 }
+.datos-id{
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+  
+}
 
 p{
   margin-top: 4px;
