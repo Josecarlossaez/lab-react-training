@@ -50,6 +50,14 @@ p{
   margin-bottom: 4px;
   font-weight: bold;
 }
+.saludo{
+  display:flex;
+  justify-content: center;
+margin-left:10px;
+  width: 95%;
+  border:solid;
+  border-width: 2px;
+}
 span{
   font-weight: normal;
 }
