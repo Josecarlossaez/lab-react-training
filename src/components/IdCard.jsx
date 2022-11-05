@@ -3,7 +3,7 @@ import '../App.css';
 
 function IdCard(props) {
 console.log(props)
-let date = props.birth.toString()
+
 // console.log(date)
 
   return (

@@ -6,11 +6,11 @@ function Greetings(props) {
 if(props.lang === "de"){
     return <p class="saludo">Hallo {props.children }</p>
 } if(props.lang === "en"){
-    return <p class="saludo">Hallo {props.children }</p>
+    return <p class="saludo">Hello {props.children }</p>
 } if(props.lang === "es"){
-    return <p class="saludo">Hallo {props.children }</p>
+    return <p class="saludo">Chacho {props.children }</p>
 } if(props.lang === "fr"){
-    return <p class="saludo">Hallo {props.children }</p>
+    return <p class="saludo">Bonjour {props.children }</p>
 } 
  
 }
