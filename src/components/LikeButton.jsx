@@ -4,14 +4,19 @@ import {useState} from "react"
 
 function LikeButton() {
     const [like, setLike] = useState(0)
-  let colorLike = ""
+    const [counterColor, setCounterColor] = useState(0)
+  let colorLike = colorArr[counterColor]
+ 
     const addOneLike = () => {
         setLike(like + 1)
+        setCounterColor(counterColor +1)
+      if(counterColor > 5){
+        setCounterColor(0)
+      }else{
+        setCounterColor(counterColor +1)
+      }
        
-        for (let i=0; i < colorArr.length; i++){
-            colorLike= colorArr[i] +1
-        }
-        return colorLike
+    
     }
   
   return (

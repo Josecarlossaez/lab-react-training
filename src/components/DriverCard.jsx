@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function DriverCard(props) {
     let fillStart = "★".repeat(Math.round(props.rating)) + "☆".repeat(5-Math.round(props.rating))
     console.log(props)
