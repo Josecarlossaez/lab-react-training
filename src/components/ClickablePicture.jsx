@@ -5,22 +5,32 @@ import imgClicked from "../assets/images/maxence-glasses.png"
 
 function ClickablePicture(props) {
     const [imageClick, setImageClick] = useState(img)
+    // const [imageGlassIsShowing, setImageGlassIsShowing] = useState(false)
     
     const imageChange = () => {
-        setImageClick(imgClicked)
        
 
-    }
+
+              if (imageClick === img) {
+            setImageClick (imgClicked) 
+              
+            
+          } else {
+            setImageClick (img)
+          }
+       
+  }
   return (
     <div>
-    <button type="button" onClick={imageChange}>
-        <img  src={imageClick} alt=""  width="100px"/>
+  
+        <img onClick={imageChange} src={imageClick}   alt=""  width="100px" padding="0px"/>
        
       
 
-    </button>
+   
     </div>
   )
+
 }
 
 export default ClickablePicture
